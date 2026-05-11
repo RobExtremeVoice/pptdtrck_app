@@ -1,0 +1,245 @@
+// MARK: - App
+"app.name"                             = "PeptidesTrack";
+"app.tagline"                          = "Gerenciador de protocolos de peptídeos";
+
+// MARK: - Onboarding
+"onboarding.slide1.title"              = "Monitore cada peptídeo\ncom precisão";
+"onboarding.slide1.subtitle"           = "Registre doses, locais de injeção, efeitos colaterais e protocolos em segundos.";
+"onboarding.slide2.title"              = "Rotação visual\nde locais de injeção";
+"onboarding.slide2.subtitle"           = "Mapa corporal interativo evita locais repetidos e acompanha sua rotação.";
+"onboarding.slide3.title"              = "Rastreamento de\nefeitos colaterais";
+"onboarding.slide3.subtitle"           = "Avalie efeitos positivos e negativos ao longo do tempo para otimizar seu protocolo.";
+"onboarding.cta.start"                 = "Começar grátis";
+"onboarding.cta.signin"                = "Entrar";
+"onboarding.cta.skip"                  = "Pular";
+"onboarding.cta.continue"             = "Continuar";
+
+// MARK: - Paywall
+"paywall.title"                        = "Seu mês grátis\ncomeça agora";
+"paywall.subtitle"                     = "Sem cobrança por 30 dias. Cancele quando quiser.";
+"paywall.badge"                        = "Mais popular";
+"paywall.plan.pro"                     = "PRO";
+"paywall.price.monthly"                = "30 dias grátis · depois R$19,90/mês";
+"paywall.feature.unlimited"            = "Peptídeos e doses ilimitados";
+"paywall.feature.sitemap"              = "Mapa de rotação de locais de injeção";
+"paywall.feature.sideeffects"          = "Rastreador de intensidade de efeitos colaterais";
+"paywall.feature.reminders"            = "Lembretes inteligentes de dose";
+"paywall.feature.history"              = "Histórico completo e estatísticas";
+"paywall.feature.streak"               = "Rastreamento de sequência de protocolo";
+"paywall.cta.start"                    = "Começar mês grátis";
+"paywall.cta.limited"                  = "Continuar com acesso limitado";
+"paywall.cta.restore"                  = "Restaurar compras";
+"paywall.footnote"                     = "Assinatura renovada automaticamente após o período de teste. Cancele antes do dia 30.";
+
+// MARK: - Home
+"home.greeting.morning"                = "Bom dia";
+"home.greeting.afternoon"              = "Boa tarde";
+"home.greeting.evening"                = "Boa noite";
+"home.day.protocol"                    = "Dia %d do protocolo";
+"home.section.protocols"               = "Protocolos ativos";
+"home.section.sideeffects"             = "Efeitos colaterais";
+"home.section.quickstats"              = "Esta semana";
+"home.button.addpeptide"               = "+ Adicionar peptídeo";
+"home.button.logtoday"                 = "Registrar hoje";
+"home.pill.streak"                     = "%d dias de sequência";
+"home.pill.logged"                     = "Registrado hoje";
+"home.pill.logtoday"                   = "Registrar hoje";
+"home.upgrade.prompt"                  = "Assine PRO para adicionar mais peptídeos";
+
+// MARK: - Cards
+"card.lastdose.today"                  = "Última dose: hoje (%@)";
+"card.lastdose.yesterday"              = "Última dose: ontem (%@)";
+"card.lastdose.daysago"                = "Última dose: há %d dias (%@)";
+"card.lastdose.never"                  = "Nenhuma dose registrada ainda";
+"card.sideeffects.title"               = "Efeitos colaterais";
+"card.sideeffects.subtitle"            = "Registre como você está se sentindo";
+"card.button.log"                      = "Registrar";
+
+// MARK: - Wizard
+"wizard.step1.title"                   = "Escolha a categoria do peptídeo";
+"wizard.step2.title"                   = "Escolha seu peptídeo %@";
+"wizard.step3.title"                   = "Informe sua dose";
+"wizard.step3.subtitle"                = "Informe a última dose que você tomou";
+"wizard.step4.title"                   = "Frequência de dosagem";
+"wizard.step5.title"                   = "Pronto para registrar?";
+"wizard.button.next"                   = "Próximo";
+"wizard.button.back"                   = "Voltar";
+"wizard.button.logdose"                = "Registrar dose";
+"wizard.custom.placeholder"            = "Digite o nome do peptídeo";
+"wizard.notes.placeholder"             = "Adicionar nota (opcional)";
+"wizard.disclaimer"                    = "Este conteúdo é apenas para referência geral. Sempre consulte seu profissional de saúde.";
+
+// MARK: - Categories
+"peptide.category.glp1"                = "GLP-1 / Perda de Peso";
+"peptide.category.healing"             = "Cicatrização / Recuperação";
+"peptide.category.growthHormone"       = "Hormônio do Crescimento";
+"peptide.category.cognitive"           = "Cognitivo";
+"peptide.category.other"               = "Outro / Personalizado";
+
+// MARK: - Frequency
+"frequency.weekly"                     = "Uma vez por semana";
+"frequency.twice_weekly"               = "Duas vezes por semana";
+"frequency.daily"                      = "Uma vez ao dia";
+"frequency.twice_daily"                = "Duas vezes ao dia";
+"frequency.custom"                     = "A cada %d dias";
+"frequency.custom.label"               = "A cada X dias (personalizado)";
+
+// MARK: - Units
+"unit.mg"                              = "mg";
+"unit.mcg"                             = "mcg";
+"unit.IU"                              = "UI";
+"unit.ml"                              = "ml";
+
+// MARK: - Confirm fields
+"confirm.field.peptide"                = "Peptídeo";
+"confirm.field.dose"                   = "Dose";
+"confirm.field.site"                   = "Local de injeção";
+"confirm.field.date"                   = "Data";
+"confirm.field.time"                   = "Hora";
+"confirm.field.notes"                  = "Notas";
+"confirm.footnote"                     = "Os registros de medicamentos são inseridos por você e não verificados.";
+
+// MARK: - Injection sites
+"site.map.title"                       = "Onde você aplicou?";
+"site.map.instruction"                 = "Laranja = usado recentemente. Toque para selecionar.";
+"site.legend.selected"                 = "Selecionado";
+"site.legend.recent"                   = "Usado recentemente";
+"site.legend.available"                = "Disponível";
+"site.showlist"                        = "Mostrar como lista";
+"site.abdomen_lower_left"              = "Abdômen: inferior esquerdo";
+"site.abdomen_lower_middle"            = "Abdômen: inferior centro";
+"site.abdomen_lower_right"             = "Abdômen: inferior direito";
+"site.abdomen_upper_left"              = "Abdômen: superior esquerdo";
+"site.abdomen_upper_middle"            = "Abdômen: superior centro";
+"site.abdomen_upper_right"             = "Abdômen: superior direito";
+"site.thigh_left"                      = "Coxa: esquerda";
+"site.thigh_right"                     = "Coxa: direita";
+"site.upper_arm_left"                  = "Braço superior: esquerdo";
+"site.upper_arm_right"                 = "Braço superior: direito";
+
+// MARK: - Side effects
+"effects.editor.title"                 = "Editar efeitos colaterais";
+"effects.editor.subtitle"              = "Adicione ou remova os efeitos que você está rastreando.";
+"effects.section.positive"             = "Positivos";
+"effects.section.negative"             = "Negativos";
+"effects.log.title"                    = "Registrar efeitos colaterais";
+"effects.log.subtitle"                 = "Avalie a intensidade de 0 a 10.";
+"effect.reduced_food_noise"            = "Menos pensamentos sobre comida";
+"effect.reduced_joint_pain"            = "Menos dor nas articulações";
+"effect.ease_of_exercise"              = "Facilidade para se exercitar";
+"effect.feelings_of_fullness"          = "Sensação de saciedade";
+"effect.energy"                        = "Energia";
+"effect.reduced_sugar_cravings"        = "Menos vontade de doces";
+"effect.reduced_salty_cravings"        = "Menos vontade de salgados";
+"effect.reduced_fatty_cravings"        = "Menos vontade de alimentos gordurosos";
+"effect.improved_sleep"                = "Melhora no sono";
+"effect.improved_mood"                 = "Melhora no humor";
+"effect.nausea"                        = "Náusea";
+"effect.vomiting"                      = "Vômito";
+"effect.diarrhea"                      = "Diarreia";
+"effect.constipation"                  = "Constipação";
+"effect.abdominal_pain"                = "Dor / cólica abdominal";
+"effect.reduced_appetite"              = "Falta de apetite";
+"effect.injection_site_reaction"       = "Reação no local da injeção";
+"effect.acid_reflux"                   = "Refluxo ácido";
+"effect.bloating"                      = "Inchaço abdominal";
+"effect.burping"                       = "Arrotos";
+"effect.gas"                           = "Gases";
+"effect.hair_loss"                     = "Queda de cabelo";
+"effect.dehydration"                   = "Desidratação";
+"effect.dizziness"                     = "Tontura / vertigem";
+"effect.headache"                      = "Dor de cabeça";
+"effect.fatigue"                       = "Fadiga";
+"effect.irritability"                  = "Irritabilidade";
+
+// MARK: - History
+"history.title"                        = "Histórico";
+"history.stat.doses"                   = "doses";
+"history.stat.streak"                  = "sem. seguidas";
+"history.stat.avg"                     = "dose média";
+"history.empty.title"                  = "Nenhuma dose registrada ainda";
+"history.empty.cta"                    = "Registre sua primeira dose";
+
+// MARK: - Stats
+"stats.title"                          = "Estatísticas";
+"stats.section.overview"               = "Visão geral";
+"stats.section.dosechart"              = "Histórico de doses";
+"stats.section.sideeffects"            = "Tendência de efeitos colaterais";
+"stats.section.adherence"              = "Adesão ao protocolo";
+"stats.card.totaldoses"                = "Total de doses";
+"stats.card.streak"                    = "Sequência atual";
+"stats.card.beststreak"                = "Melhor sequência";
+"stats.card.protocols"                 = "Protocolos ativos";
+"stats.pro.locked"                     = "Assine PRO para ver estatísticas completas";
+
+// MARK: - Disclaimers
+"disclaimer.title"                     = "Um aviso importante sobre o rastreamento de peptídeos";
+"disclaimer.body"                      = "As informações sobre peptídeos são inseridas por você. Não verificamos medicamentos, doses, horários ou segurança.\n\nSempre siga as instruções do seu médico. As ações que você tomar com base no conteúdo do aplicativo são de sua responsabilidade.";
+"disclaimer.cta"                       = "Entendi";
+"disclaimer.tracking.footnote"         = "Apenas para rastreamento pessoal. Sempre busque atendimento médico para efeitos colaterais graves.";
+
+// MARK: - Reminders
+"reminder.prompt.title"                = "Quer um lembrete para sua próxima dose?";
+"reminder.prompt.subtitle"             = "Escolha o horário preferido:";
+"reminder.prompt.prefilled"            = "Preenchido com base no seu último registro";
+"reminder.prompt.cta"                  = "Ativar lembrete";
+"reminder.prompt.skip"                 = "Agora não";
+"reminder.warning.title"               = "Um aviso importante sobre lembretes...";
+"reminder.warning.body"                = "Lembretes podem ser atrasados ou não entregues devido a configurações do dispositivo, conectividade ou limitações da plataforma. Não verificamos medicamentos, doses, horários ou segurança.";
+"reminder.warning.cta"                 = "Entendi";
+"reminder.added"                       = "Lembrete adicionado para %@ às %@";
+"reminders.title"                      = "Lembretes";
+"reminders.add"                        = "+ Adicionar lembrete";
+"reminders.empty"                      = "Nenhum lembrete configurado";
+
+// MARK: - Missed dose
+"misseddose.title"                     = "Alerta de dose perdida";
+"misseddose.body"                      = "%@ estava previsto há %d dias.";
+"misseddose.cta.log"                   = "Registrar agora";
+"misseddose.cta.dismiss"               = "Ignorar";
+
+// MARK: - Notifications
+"notification.reminder.title"          = "Hora da sua dose de %@";
+"notification.reminder.body"           = "Registre sua dose no PeptidesTrack para manter o controle.";
+"notification.action.log"              = "Registrar agora";
+"notification.action.skip"             = "Ignorar";
+
+// MARK: - Settings
+"settings.title"                       = "Configurações";
+"settings.section.account"             = "Conta";
+"settings.section.notifications"       = "Notificações";
+"settings.section.data"                = "Dados";
+"settings.section.support"             = "Suporte";
+"settings.row.subscription"            = "Assinatura";
+"settings.row.reminders"               = "Gerenciar lembretes";
+"settings.row.sideeffects"             = "Efeitos colaterais a rastrear";
+"settings.row.export"                  = "Exportar dados";
+"settings.row.privacy"                 = "Política de privacidade";
+"settings.row.terms"                   = "Termos de uso";
+"settings.row.feedback"                = "Enviar feedback";
+"settings.row.version"                 = "Versão";
+"settings.pro.active"                  = "PRO · Ativo";
+"settings.pro.trial"                   = "PRO · Teste (%d dias restantes)";
+"settings.pro.expired"                 = "Plano gratuito · Assinar";
+
+// MARK: - Global buttons
+"button.save"                          = "Salvar";
+"button.cancel"                        = "Cancelar";
+"button.done"                          = "Concluído";
+"button.edit"                          = "Editar";
+"button.delete"                        = "Excluir";
+"button.add"                           = "Adicionar";
+"button.confirm"                       = "Confirmar";
+"button.upgrade"                       = "Assinar PRO";
+
+// MARK: - Tab bar
+"tab.home"                             = "Início";
+"tab.history"                          = "Histórico";
+"tab.stats"                            = "Estatísticas";
+"tab.settings"                         = "Configurações";
+
+// MARK: - Pro gate
+"pro.gate.title"                       = "Recurso PRO";
+"pro.gate.body"                        = "Assine o PRO para desbloquear este recurso.";
+"pro.badge"                            = "PRO";
+"pro.trial.badge"                      = "TESTE";

@@ -1,0 +1,54 @@
+# Xcode
+*.xcworkspace
+!*.xcodeproj/*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+*.resolved
+
+# Build artifacts
+build/
+DerivedData/
+
+# Secrets & Keys — NUNCA commitar
+*.cer
+*.p8
+*.p12
+*.mobileprovision
+*.provisionprofile
+*.env
+.env
+Secrets.swift
+APIKeys.swift
+Config.xcconfig
+GoogleService-Info.plist
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX/
+
+# Claude Code
+.claude/session*
+
+# Crash logs
+*.crash
+
+# TestFlight / App Store
+*.itmsp

@@ -1,0 +1,245 @@
+// MARK: - App
+"app.name"                             = "PeptidesTrack";
+"app.tagline"                          = "Peptide protocol manager";
+
+// MARK: - Onboarding
+"onboarding.slide1.title"              = "Track every peptide\nwith precision";
+"onboarding.slide1.subtitle"           = "Log doses, injection sites, side effects and protocols in seconds.";
+"onboarding.slide2.title"              = "Visual injection\nsite rotation";
+"onboarding.slide2.subtitle"           = "Interactive body map prevents repeated sites and tracks your rotation.";
+"onboarding.slide3.title"              = "Science-backed\nside effect tracking";
+"onboarding.slide3.subtitle"           = "Rate positive and negative effects over time to optimize your protocol.";
+"onboarding.cta.start"                 = "Get started free";
+"onboarding.cta.signin"                = "Sign in";
+"onboarding.cta.skip"                  = "Skip";
+"onboarding.cta.continue"             = "Continue";
+
+// MARK: - Paywall
+"paywall.title"                        = "Your free month\nstarts now";
+"paywall.subtitle"                     = "No charge for 30 days. Cancel anytime.";
+"paywall.badge"                        = "Most popular";
+"paywall.plan.pro"                     = "PRO";
+"paywall.price.monthly"                = "First 30 days free · then $4.99/mo";
+"paywall.feature.unlimited"            = "Unlimited peptides & doses";
+"paywall.feature.sitemap"              = "Injection site rotation map";
+"paywall.feature.sideeffects"          = "Side effects intensity tracker";
+"paywall.feature.reminders"            = "Smart dose reminders";
+"paywall.feature.history"              = "Full history & analytics";
+"paywall.feature.streak"               = "Protocol streak tracking";
+"paywall.cta.start"                    = "Start free month";
+"paywall.cta.limited"                  = "Continue with limited access";
+"paywall.cta.restore"                  = "Restore purchases";
+"paywall.footnote"                     = "Subscription auto-renews after trial. Cancel anytime before day 30.";
+
+// MARK: - Home
+"home.greeting.morning"                = "Good morning";
+"home.greeting.afternoon"              = "Good afternoon";
+"home.greeting.evening"                = "Good evening";
+"home.day.protocol"                    = "Day %d of protocol";
+"home.section.protocols"               = "Active protocols";
+"home.section.sideeffects"             = "Side effects";
+"home.section.quickstats"              = "This week";
+"home.button.addpeptide"               = "+ Add peptide";
+"home.button.logtoday"                 = "Log today";
+"home.pill.streak"                     = "%dd streak";
+"home.pill.logged"                     = "Today logged";
+"home.pill.logtoday"                   = "Log today";
+"home.upgrade.prompt"                  = "Upgrade to add more peptides";
+
+// MARK: - Cards
+"card.lastdose.today"                  = "Last dose: today (%@)";
+"card.lastdose.yesterday"              = "Last dose: yesterday (%@)";
+"card.lastdose.daysago"                = "Last dose: %d days ago (%@)";
+"card.lastdose.never"                  = "No doses logged yet";
+"card.sideeffects.title"               = "Side effects";
+"card.sideeffects.subtitle"            = "Log how you're feeling";
+"card.button.log"                      = "Log";
+
+// MARK: - Wizard
+"wizard.step1.title"                   = "Choose peptide category";
+"wizard.step2.title"                   = "Choose your %@ peptide";
+"wizard.step3.title"                   = "Enter your dose";
+"wizard.step3.subtitle"                = "Enter the last dose you took";
+"wizard.step4.title"                   = "Dosing frequency";
+"wizard.step5.title"                   = "Ready to log?";
+"wizard.button.next"                   = "Next";
+"wizard.button.back"                   = "Back";
+"wizard.button.logdose"                = "Log dose";
+"wizard.custom.placeholder"            = "Enter peptide name";
+"wizard.notes.placeholder"             = "Add a note (optional)";
+"wizard.disclaimer"                    = "This content is for general reference only. Always consult your healthcare provider.";
+
+// MARK: - Categories
+"peptide.category.glp1"                = "GLP-1 / Weight Loss";
+"peptide.category.healing"             = "Healing / Recovery";
+"peptide.category.growthHormone"       = "Growth Hormone";
+"peptide.category.cognitive"           = "Cognitive";
+"peptide.category.other"               = "Other / Custom";
+
+// MARK: - Frequency
+"frequency.weekly"                     = "Once a week";
+"frequency.twice_weekly"               = "Twice a week";
+"frequency.daily"                      = "Once a day";
+"frequency.twice_daily"                = "Twice a day";
+"frequency.custom"                     = "Every %d days";
+"frequency.custom.label"               = "Every X days (custom)";
+
+// MARK: - Units
+"unit.mg"                              = "mg";
+"unit.mcg"                             = "mcg";
+"unit.IU"                              = "IU";
+"unit.ml"                              = "ml";
+
+// MARK: - Confirm fields
+"confirm.field.peptide"                = "Peptide";
+"confirm.field.dose"                   = "Dose";
+"confirm.field.site"                   = "Injection site";
+"confirm.field.date"                   = "Date";
+"confirm.field.time"                   = "Time";
+"confirm.field.notes"                  = "Notes";
+"confirm.footnote"                     = "Drug logs are entered by you and not verified.";
+
+// MARK: - Injection sites
+"site.map.title"                       = "Where did you inject?";
+"site.map.instruction"                 = "Orange = recently used. Tap to select.";
+"site.legend.selected"                 = "Selected";
+"site.legend.recent"                   = "Recently used";
+"site.legend.available"                = "Available";
+"site.showlist"                        = "Show as list";
+"site.abdomen_lower_left"              = "Abdomen: lower left";
+"site.abdomen_lower_middle"            = "Abdomen: lower middle";
+"site.abdomen_lower_right"             = "Abdomen: lower right";
+"site.abdomen_upper_left"              = "Abdomen: upper left";
+"site.abdomen_upper_middle"            = "Abdomen: upper middle";
+"site.abdomen_upper_right"             = "Abdomen: upper right";
+"site.thigh_left"                      = "Thigh: left";
+"site.thigh_right"                     = "Thigh: right";
+"site.upper_arm_left"                  = "Upper arm: left";
+"site.upper_arm_right"                 = "Upper arm: right";
+
+// MARK: - Side effects
+"effects.editor.title"                 = "Edit side effects";
+"effects.editor.subtitle"              = "Add or remove the effects you're tracking.";
+"effects.section.positive"             = "Positive";
+"effects.section.negative"             = "Negative";
+"effects.log.title"                    = "Log side effects";
+"effects.log.subtitle"                 = "Rate your side effect strength from 0 to 10.";
+"effect.reduced_food_noise"            = "Reduced food noise";
+"effect.reduced_joint_pain"            = "Reduced joint pain";
+"effect.ease_of_exercise"              = "Ease of exercise";
+"effect.feelings_of_fullness"          = "Feelings of fullness";
+"effect.energy"                        = "Energy";
+"effect.reduced_sugar_cravings"        = "Reduced sugar cravings";
+"effect.reduced_salty_cravings"        = "Reduced salty cravings";
+"effect.reduced_fatty_cravings"        = "Reduced fatty food cravings";
+"effect.improved_sleep"                = "Improved sleep";
+"effect.improved_mood"                 = "Improved mood";
+"effect.nausea"                        = "Nausea";
+"effect.vomiting"                      = "Vomiting";
+"effect.diarrhea"                      = "Diarrhea";
+"effect.constipation"                  = "Constipation";
+"effect.abdominal_pain"                = "Abdominal pain / cramping";
+"effect.reduced_appetite"              = "Reduced appetite";
+"effect.injection_site_reaction"       = "Injection site reaction";
+"effect.acid_reflux"                   = "Acid reflux";
+"effect.bloating"                      = "Bloating";
+"effect.burping"                       = "Burping";
+"effect.gas"                           = "Gas";
+"effect.hair_loss"                     = "Hair loss";
+"effect.dehydration"                   = "Dehydration";
+"effect.dizziness"                     = "Lightheadedness / dizziness";
+"effect.headache"                      = "Headache";
+"effect.fatigue"                       = "Fatigue";
+"effect.irritability"                  = "Irritability";
+
+// MARK: - History
+"history.title"                        = "History";
+"history.stat.doses"                   = "doses";
+"history.stat.streak"                  = "wk streak";
+"history.stat.avg"                     = "avg dose";
+"history.empty.title"                  = "No doses logged yet";
+"history.empty.cta"                    = "Log your first dose";
+
+// MARK: - Stats
+"stats.title"                          = "Stats";
+"stats.section.overview"               = "Overview";
+"stats.section.dosechart"              = "Dose history";
+"stats.section.sideeffects"            = "Side effects trend";
+"stats.section.adherence"              = "Protocol adherence";
+"stats.card.totaldoses"                = "Total doses";
+"stats.card.streak"                    = "Current streak";
+"stats.card.beststreak"                = "Best streak";
+"stats.card.protocols"                 = "Active protocols";
+"stats.pro.locked"                     = "Upgrade to PRO to unlock full stats";
+
+// MARK: - Disclaimers
+"disclaimer.title"                     = "An important note about peptide tracking";
+"disclaimer.body"                      = "Peptide info is entered by you. We do not verify medications, doses, timing, or safety, and do not alert you to missed or extra doses, risks, interactions, contraindications, or side effects.\n\nAlways follow your prescriber's instructions. Actions you take based on app content are at your own risk.";
+"disclaimer.cta"                       = "Got it";
+"disclaimer.tracking.footnote"         = "For personal tracking and information purposes only. Always seek medical care for serious side effects.";
+
+// MARK: - Reminders
+"reminder.prompt.title"                = "Want a reminder for your next dose?";
+"reminder.prompt.subtitle"             = "Pick your preferred time:";
+"reminder.prompt.prefilled"            = "Prefilled from your recent log";
+"reminder.prompt.cta"                  = "Turn on reminder";
+"reminder.prompt.skip"                 = "Not now";
+"reminder.warning.title"               = "An important note about reminders...";
+"reminder.warning.body"                = "Reminders may be delayed or not delivered due to device settings, connectivity, or platform limits. We don't verify medication, doses, timing or safety.";
+"reminder.warning.cta"                 = "Got it";
+"reminder.added"                       = "Reminder added for %@ at %@";
+"reminders.title"                      = "Reminders";
+"reminders.add"                        = "+ Add reminder";
+"reminders.empty"                      = "No reminders set";
+
+// MARK: - Missed dose
+"misseddose.title"                     = "Missed dose alert";
+"misseddose.body"                      = "%@ was due %d days ago.";
+"misseddose.cta.log"                   = "Log now";
+"misseddose.cta.dismiss"               = "Dismiss";
+
+// MARK: - Notifications
+"notification.reminder.title"          = "Time for your %@ dose";
+"notification.reminder.body"           = "Log your dose in PeptidesTrack to stay on track.";
+"notification.action.log"              = "Log now";
+"notification.action.skip"             = "Skip";
+
+// MARK: - Settings
+"settings.title"                       = "Settings";
+"settings.section.account"             = "Account";
+"settings.section.notifications"       = "Notifications";
+"settings.section.data"                = "Data";
+"settings.section.support"             = "Support";
+"settings.row.subscription"            = "Subscription";
+"settings.row.reminders"               = "Manage reminders";
+"settings.row.sideeffects"             = "Side effects to track";
+"settings.row.export"                  = "Export data";
+"settings.row.privacy"                 = "Privacy policy";
+"settings.row.terms"                   = "Terms of use";
+"settings.row.feedback"                = "Send feedback";
+"settings.row.version"                 = "Version";
+"settings.pro.active"                  = "PRO · Active";
+"settings.pro.trial"                   = "PRO · Trial (%d days left)";
+"settings.pro.expired"                 = "Free plan · Upgrade";
+
+// MARK: - Global buttons
+"button.save"                          = "Save";
+"button.cancel"                        = "Cancel";
+"button.done"                          = "Done";
+"button.edit"                          = "Edit";
+"button.delete"                        = "Delete";
+"button.add"                           = "Add";
+"button.confirm"                       = "Confirm";
+"button.upgrade"                       = "Upgrade to PRO";
+
+// MARK: - Tab bar
+"tab.home"                             = "Home";
+"tab.history"                          = "History";
+"tab.stats"                            = "Stats";
+"tab.settings"                         = "Settings";
+
+// MARK: - Pro gate
+"pro.gate.title"                       = "PRO feature";
+"pro.gate.body"                        = "Upgrade to PRO to unlock this feature.";
+"pro.badge"                            = "PRO";
+"pro.trial.badge"                      = "TRIAL";

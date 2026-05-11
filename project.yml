@@ -1,0 +1,65 @@
+name: PeptidesTrack
+options:
+  bundleIdPrefix: com.peptidestrack
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    DEVELOPMENT_TEAM: ""
+    ENABLE_BITCODE: "NO"
+
+targets:
+  PeptidesTrack:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: PeptidesTrack
+        excludes:
+          - "**/.gitkeep"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.peptidestrack.app
+        PRODUCT_NAME: PeptidesTrack
+        SWIFT_VERSION: "6.0"
+        SWIFT_STRICT_CONCURRENCY: complete
+        INFOPLIST_FILE: PeptidesTrack/Info.plist
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    entitlements:
+      path: PeptidesTrack/PeptidesTrack.entitlements
+      properties:
+        com.apple.developer.in-app-payments:
+          - com.peptidestrack.app.pro.monthly
+    info:
+      path: PeptidesTrack/Info.plist
+      properties:
+        CFBundleName: PeptidesTrack
+        CFBundleDisplayName: PeptidesTrack
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations:
+          - en
+          - pt-BR
+          - es
+          - de
+        UILaunchScreen:
+          UIColorName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIRequiresFullScreen: false
+        NSUserNotificationUsageDescription: "PeptidesTrack uses notifications to remind you about your peptide doses."
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
