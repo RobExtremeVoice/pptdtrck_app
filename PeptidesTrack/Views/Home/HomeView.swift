@@ -44,35 +44,47 @@ struct HomeView: View {
     // MARK: - Header
 
     private var headerSection: some View {
-        HStack {
-            VStack(alignment: .leading, spacing: 4) {
-                Text(LocalizedStringKey(greetingKey))
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundStyle(Color(hex: "F1F5F9"))
+        VStack(spacing: 16) {
+            // Logo centered
+            Image("AppLogo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 72, height: 72)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+                .shadow(color: Color(hex: "06B6D4").opacity(0.35), radius: 12, y: 4)
 
-                if let firstEntry = activeEntries.first {
-                    let days = daysSinceFirstLog(firstEntry)
-                    Text(String(format: NSLocalizedString("home.day.protocol", comment: ""), days))
-                        .font(.subheadline)
-                        .foregroundStyle(Color(hex: "94A3B8"))
+            // Greeting row
+            HStack {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(LocalizedStringKey(greetingKey))
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundStyle(Color(hex: "F1F5F9"))
+
+                    if let firstEntry = activeEntries.first {
+                        let days = daysSinceFirstLog(firstEntry)
+                        Text(String(format: NSLocalizedString("home.day.protocol", comment: ""), days))
+                            .font(.subheadline)
+                            .foregroundStyle(Color(hex: "94A3B8"))
+                    }
                 }
-            }
 
-            Spacer()
+                Spacer()
 
-            HStack(spacing: 12) {
-                if store.isPro { ProBadgeView() }
-                else if store.isInTrial { TrialBadgeView() }
+                HStack(spacing: 12) {
+                    if store.isPro { ProBadgeView() }
+                    else if store.isInTrial { TrialBadgeView() }
 
-                NavigationLink(destination: RemindersView()) {
-                    Image(systemName: "bell.fill")
-                        .font(.system(size: 18))
-                        .foregroundStyle(Color(hex: "94A3B8"))
-                        .accessibilityLabel(Text(LocalizedStringKey("reminders.title")))
+                    NavigationLink(destination: RemindersView()) {
+                        Image(systemName: "bell.fill")
+                            .font(.system(size: 18))
+                            .foregroundStyle(Color(hex: "94A3B8"))
+                            .accessibilityLabel(Text(LocalizedStringKey("reminders.title")))
+                    }
                 }
             }
         }
+        .frame(maxWidth: .infinity)
     }
 
     // MARK: - Streak strip
