@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -70,7 +70,7 @@
 		94C37846839554C1D6B9B441 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		B19BD67A8BA4DBF779B07F32 /* ProBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProBadgeView.swift; sourceTree = "<group>"; };
 		B8E26E56F0A09F74E0E1C098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B91AB9EB633EED6F5DE35F1A /* PeptidesTrack.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PeptidesTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91AB9EB633EED6F5DE35F1A /* PeptidesTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeptidesTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5D8706A102F1E3F8EC98F5 /* DisclaimerModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerModal.swift; sourceTree = "<group>"; };
 		C6D80B9ADBF665C438BF113B /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		C885969B413B503971F634D3 /* SideEffectsEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffectsEditorView.swift; sourceTree = "<group>"; };
@@ -332,7 +332,6 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					0D3C7E8FE547B55D1B039C08 = {
-						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -350,7 +349,6 @@
 			);
 			mainGroup = F88678A57C580D7402152E75;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -505,7 +503,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4NQ7YR36HM;
 				INFOPLIST_FILE = PeptidesTrack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -531,7 +529,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4NQ7YR36HM;
 				INFOPLIST_FILE = PeptidesTrack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (

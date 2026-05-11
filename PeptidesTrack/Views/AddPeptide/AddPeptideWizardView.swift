@@ -5,6 +5,8 @@ import SwiftData
 
 struct AddPeptideWizardView: View {
 
+    var initialCategory: PeptideCategory? = nil
+
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var store: StoreManager
@@ -36,6 +38,12 @@ struct AddPeptideWizardView: View {
             }
             .background(Color(hex: "080C18"))
             .navigationBarHidden(true)
+        }
+        .onAppear {
+            if let cat = initialCategory {
+                selectedCategory = cat
+                step = 1
+            }
         }
         .sheet(isPresented: $showReminderPrompt) {
             if let entry = savedEntry {

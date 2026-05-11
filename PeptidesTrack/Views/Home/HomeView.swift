@@ -12,6 +12,7 @@ struct HomeView: View {
     private var activeEntries: [PeptideEntry]
 
     @State private var showWizard = false
+    @State private var wizardCategory: PeptideCategory? = nil
     @State private var logTarget: PeptideEntry? = nil
 
     // MARK: - Body
@@ -35,7 +36,8 @@ struct HomeView: View {
             .overlay(alignment: .bottomTrailing) { fab }
         }
         .sheet(isPresented: $showWizard) {
-            AddPeptideWizardView()
+            AddPeptideWizardView(initialCategory: wizardCategory)
+                .onDisappear { wizardCategory = nil }
         }
     }
 
@@ -128,54 +130,66 @@ struct HomeView: View {
                 .foregroundStyle(Color(hex: "4A5580"))
 
             if activeEntries.isEmpty {
-                emptyProtocolsCard
+                categoryCardsGrid
             } else {
                 LazyVStack(spacing: 10) {
                     ForEach(activeEntries) { entry in
                         PeptideCardRow(entry: entry, onLog: { logTarget = entry })
                     }
                 }
-            }
 
-            // Add button or upgrade prompt
-            if !store.isPro && !store.isInTrial && activeEntries.count >= StoreManager.freePeptideLimit {
-                upgradePromptButton
-            } else {
-                addPeptideButton
+                if !store.isPro && !store.isInTrial && activeEntries.count >= StoreManager.freePeptideLimit {
+                    upgradePromptButton
+                }
             }
         }
     }
 
-    private var emptyProtocolsCard: some View {
-        VStack(spacing: 12) {
-            Image(systemName: "cross.vial.fill")
-                .font(.system(size: 32))
-                .foregroundStyle(Color(hex: "06B6D4"))
-                .accessibilityHidden(true)
-            Text(LocalizedStringKey("card.lastdose.never"))
-                .font(.subheadline)
-                .foregroundStyle(Color(hex: "64748B"))
+    // MARK: - Category cards grid
+
+    private var categoryCardsGrid: some View {
+        VStack(spacing: 10) {
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+                ForEach(PeptideCategory.allCases.filter { $0 != .other }, id: \.self) { cat in
+                    categoryCard(cat)
+                }
+            }
+            categoryCard(.other)
         }
-        .frame(maxWidth: .infinity)
-        .padding(32)
-        .surfaceCard()
     }
 
-    private var addPeptideButton: some View {
-        Button(action: { showWizard = true }) {
-            HStack {
-                Image(systemName: "plus.circle.fill")
-                    .foregroundStyle(Color(hex: "06B6D4"))
-                    .accessibilityHidden(true)
-                Text(LocalizedStringKey("home.button.addpeptide"))
-                    .font(.subheadline)
-                    .fontWeight(.medium)
-                    .foregroundStyle(Color(hex: "06B6D4"))
+    private func categoryCard(_ cat: PeptideCategory) -> some View {
+        Button(action: {
+            wizardCategory = cat
+            showWizard = true
+        }) {
+            HStack(spacing: 12) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(Color(hex: cat.glowHex))
+                        .frame(width: 36, height: 36)
+                    Image(systemName: cat.sfSymbol)
+                        .font(.system(size: 15))
+                        .foregroundStyle(Color(hex: cat.colorHex))
+                        .accessibilityHidden(true)
+                }
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(LocalizedStringKey(cat.localizationKey))
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(Color(hex: "F1F5F9"))
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.8)
+                    Image(systemName: "plus")
+                        .font(.caption2)
+                        .foregroundStyle(Color(hex: cat.colorHex))
+                        .accessibilityHidden(true)
+                }
+                Spacer(minLength: 0)
             }
-            .frame(maxWidth: .infinity)
-            .frame(height: 48)
-            .overlay(RoundedRectangle(cornerRadius: 12)
-                .strokeBorder(Color(hex: "06B6D4").opacity(0.4), lineWidth: 1, antialiased: true))
+            .padding(12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .darkCard(radius: 12)
         }
     }
 
