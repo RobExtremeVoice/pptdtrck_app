@@ -49,9 +49,8 @@ struct HomeView: View {
             Image("AppLogo")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 72, height: 72)
-                .clipShape(RoundedRectangle(cornerRadius: 16))
-                .shadow(color: Color(hex: "06B6D4").opacity(0.35), radius: 12, y: 4)
+                .frame(width: 120, height: 120)
+                .shadow(color: Color(hex: "06B6D4").opacity(0.4), radius: 20, y: 6)
 
             // Greeting row
             HStack {
