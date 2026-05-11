@@ -46,11 +46,23 @@ struct HomeView: View {
     private var headerSection: some View {
         VStack(spacing: 16) {
             // Logo centered
-            Image("AppLogo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 120, height: 120)
-                .shadow(color: Color(hex: "06B6D4").opacity(0.4), radius: 20, y: 6)
+            VStack(spacing: 4) {
+                ZStack {
+                    Color(hex: "06B6D4")
+                        .opacity(0.15)
+                        .frame(width: 100, height: 60)
+                        .blur(radius: 40)
+
+                    Image("AppLogo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 110, height: 110)
+                }
+
+                Text("Peptides Track")
+                    .font(.system(size: 18, weight: .bold, design: .rounded))
+                    .foregroundStyle(Color(hex: "F1F5F9"))
+            }
 
             // Greeting row
             HStack {
