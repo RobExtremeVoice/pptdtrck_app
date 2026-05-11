@@ -6,5 +6,7 @@
 	<array>
 		<string>com.peptidestrack.app.pro.monthly</string>
 	</array>
+	<key>aps-environment</key>
+	<string>development</string>
 </dict>
 </plist>
