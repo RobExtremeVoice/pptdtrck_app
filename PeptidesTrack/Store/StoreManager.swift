@@ -92,13 +92,14 @@ final class StoreManager: ObservableObject {
                transaction.revocationDate == nil {
                 foundActive = true
 
-                // Detect introductory offer (trial) — offerType is the correct StoreKit 2 API
-                if transaction.offerType == .introductoryOffer {
-                    foundTrial = true
-                    if let expirationDate = transaction.expirationDate {
-                        daysLeft = max(0, Calendar.current.dateComponents(
-                            [.day], from: Date(), to: expirationDate
-                        ).day ?? 0)
+                if #available(iOS 17.2, *) {
+                    if let offer = transaction.offer, offer.paymentMode == .freeTrial {
+                        foundTrial = true
+                        if let expirationDate = transaction.expirationDate {
+                            daysLeft = max(0, Calendar.current.dateComponents(
+                                [.day], from: Date(), to: expirationDate
+                            ).day ?? 0)
+                        }
                     }
                 }
             }

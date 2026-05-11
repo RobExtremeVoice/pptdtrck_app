@@ -7,24 +7,140 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033163A60D016D8386E2369C /* PeptideCardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B8DBD53DEF135902B5E04 /* PeptideCardRow.swift */; };
+		0628FEE2BAEE1EAE64D82783 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39735AD2AAA7D82BDB40BE1F /* ContentView.swift */; };
+		0BF70EE3917AD7D40A235C2E /* ProBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19BD67A8BA4DBF779B07F32 /* ProBadgeView.swift */; };
+		0D03B6C5FD3651CA27386EE4 /* LogDoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E113CA41B88CD28022A31627 /* LogDoseView.swift */; };
 		14F9077138DD459FCD4106E9 /* PeptidesTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EE378A7E06074D8C2BACBA /* PeptidesTrackApp.swift */; };
+		16EA3FA6018CC2E24D25DD5B /* WeeklyReminderPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DC8CB26622E6384D75D24D /* WeeklyReminderPrompt.swift */; };
+		2A0A44DD5F3BD9BECFDD6040 /* SideEffectsEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C885969B413B503971F634D3 /* SideEffectsEditorView.swift */; };
+		3030396B06C969F0F7215F94 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB28379C2CC5B1156408A38 /* StatsView.swift */; };
+		43A4921FC247EF9CF08C28EF /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D80B9ADBF665C438BF113B /* PaywallView.swift */; };
+		45CEB336371C7E557A2D2983 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CA449983DF1138CD16BA4 /* SettingsView.swift */; };
+		50D9E64F14DBF8F8C92507EF /* InjectionSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428AE850C8194A568E090321 /* InjectionSite.swift */; };
+		554EADAEFEAEA637E85BFF59 /* AddPeptideWizardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE062F722AC2DAEA66E356 /* AddPeptideWizardView.swift */; };
+		59313E41A2658B2CABF7F007 /* Notification+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D70D3F993DF849BE0DDC876 /* Notification+Names.swift */; };
+		61060082E027D3E8D228A0DB /* SideEffectLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192127E28B86BAFBDB5FFD11 /* SideEffectLog.swift */; };
+		63FB73E68BFC79F8659495D6 /* PeptidesNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1789A2672B5D8FA238BAD2C1 /* PeptidesNotificationManager.swift */; };
+		6445BC60C0A721E20FEBF116 /* PeptideEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5B812C1E76E025B83E449 /* PeptideEntry.swift */; };
+		68D2A0A2418C2EAA47F55717 /* PeptideCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C71FAD71B176063845F71A1 /* PeptideCatalog.swift */; };
+		84D900878CC26A3E6A97B45F /* PeptideDoseHistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2125566F6E7072FD9884E2C /* PeptideDoseHistoryRow.swift */; };
+		8E0A7B784E749ADF12D1513C /* ReminderWarningModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5434804200582C91A25AED /* ReminderWarningModal.swift */; };
+		8F1474624932A5C5EC7877C4 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C37846839554C1D6B9B441 /* OnboardingSlide.swift */; };
+		94CE760273EFBFFFA1DEF273 /* View+DarkCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E2DE2E1F232C81B05B0F84 /* View+DarkCard.swift */; };
+		953703CF54AABC13F8CA4638 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D91DE88F1EE17327B59BD /* Color+Hex.swift */; };
+		9AD46D5BE3CF1C930C4BD67E /* PeptideHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6171D9870FCCD5C405C86852 /* PeptideHistoryView.swift */; };
+		9F091F26A4CA5DD563417984 /* SideEffectSliderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B439F656CCC6E77307F61 /* SideEffectSliderCard.swift */; };
+		A1DBB0BCC08A1DEE7958660A /* LogSideEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E54752E90F257B0002F702 /* LogSideEffectsView.swift */; };
+		A8598D59A6DDAFC6A77F5444 /* DisclaimerModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5D8706A102F1E3F8EC98F5 /* DisclaimerModal.swift */; };
+		AB4518A775FFE495FC246865 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EC4CA3B5F30513D1353B37 /* StoreManager.swift */; };
+		AB610BAFD7F86DCB2D118CEB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7122B5035E8BF325FEAB16 /* HomeView.swift */; };
+		B05A7F5F6E7956928D07BED7 /* StatPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D236BE3C26866D0AB96B5 /* StatPill.swift */; };
+		B9B6371F4385CD16A22E86C1 /* InjectionSiteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00CD9F24048F87D1C90991 /* InjectionSiteMapView.swift */; };
+		BFC31FA26E5D25E1AD436EF6 /* SideEffectsCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5052DC0B6BB5A973728CE7AB /* SideEffectsCatalog.swift */; };
+		CC189B923B24E2D2366ED844 /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2BAC3F8401E6CBD572F73 /* RemindersView.swift */; };
+		E3FCD5A51C8A3D12C2EB6C1E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1597053224FE4DFA81DE16 /* OnboardingView.swift */; };
 		E8FCC3FAC49E4C213E2FDE13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8E26E56F0A09F74E0E1C098 /* Assets.xcassets */; };
+		FB61EE77D3D734A58EC45918 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B28AD08491F6D3507075F45 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02FBDDCA9E5BF2FE022D1483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1789A2672B5D8FA238BAD2C1 /* PeptidesNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeptidesNotificationManager.swift; sourceTree = "<group>"; };
+		192127E28B86BAFBDB5FFD11 /* SideEffectLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffectLog.swift; sourceTree = "<group>"; };
+		20E2DE2E1F232C81B05B0F84 /* View+DarkCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+DarkCard.swift"; sourceTree = "<group>"; };
 		20E2E69759F229A23A26D356 /* PeptidesTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PeptidesTrack.entitlements; sourceTree = "<group>"; };
+		27EC4CA3B5F30513D1353B37 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		299B8DBD53DEF135902B5E04 /* PeptideCardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeptideCardRow.swift; sourceTree = "<group>"; };
+		2B312BEC75B1A793084A20E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2D70D3F993DF849BE0DDC876 /* Notification+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Names.swift"; sourceTree = "<group>"; };
+		34DC8CB26622E6384D75D24D /* WeeklyReminderPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyReminderPrompt.swift; sourceTree = "<group>"; };
+		39735AD2AAA7D82BDB40BE1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A584B2AE4B2958C70F02D52 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A9D91DE88F1EE17327B59BD /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		428AE850C8194A568E090321 /* InjectionSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionSite.swift; sourceTree = "<group>"; };
+		4C71FAD71B176063845F71A1 /* PeptideCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeptideCatalog.swift; sourceTree = "<group>"; };
+		4FB28379C2CC5B1156408A38 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		5052DC0B6BB5A973728CE7AB /* SideEffectsCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffectsCatalog.swift; sourceTree = "<group>"; };
+		6171D9870FCCD5C405C86852 /* PeptideHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeptideHistoryView.swift; sourceTree = "<group>"; };
+		667D236BE3C26866D0AB96B5 /* StatPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatPill.swift; sourceTree = "<group>"; };
+		7D5434804200582C91A25AED /* ReminderWarningModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderWarningModal.swift; sourceTree = "<group>"; };
 		80EE378A7E06074D8C2BACBA /* PeptidesTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeptidesTrackApp.swift; sourceTree = "<group>"; };
+		8C1597053224FE4DFA81DE16 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		94C37846839554C1D6B9B441 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		B19BD67A8BA4DBF779B07F32 /* ProBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProBadgeView.swift; sourceTree = "<group>"; };
 		B8E26E56F0A09F74E0E1C098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B91AB9EB633EED6F5DE35F1A /* PeptidesTrack.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PeptidesTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA5D8706A102F1E3F8EC98F5 /* DisclaimerModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerModal.swift; sourceTree = "<group>"; };
+		C6D80B9ADBF665C438BF113B /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		C885969B413B503971F634D3 /* SideEffectsEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffectsEditorView.swift; sourceTree = "<group>"; };
+		CA7122B5035E8BF325FEAB16 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CD00CD9F24048F87D1C90991 /* InjectionSiteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionSiteMapView.swift; sourceTree = "<group>"; };
+		CF8823C0E647918D29C76154 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D02B439F656CCC6E77307F61 /* SideEffectSliderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffectSliderCard.swift; sourceTree = "<group>"; };
+		D6E54752E90F257B0002F702 /* LogSideEffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSideEffectsView.swift; sourceTree = "<group>"; };
+		D89CA449983DF1138CD16BA4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DB8FDDE7B153BAC1C0A20251 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DCB2BAC3F8401E6CBD572F73 /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
+		E113CA41B88CD28022A31627 /* LogDoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDoseView.swift; sourceTree = "<group>"; };
+		E2125566F6E7072FD9884E2C /* PeptideDoseHistoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeptideDoseHistoryRow.swift; sourceTree = "<group>"; };
+		E9FE062F722AC2DAEA66E356 /* AddPeptideWizardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPeptideWizardView.swift; sourceTree = "<group>"; };
+		F7F5B812C1E76E025B83E449 /* PeptideEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeptideEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		144763C93D74B74C7E811910 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				4FB28379C2CC5B1156408A38 /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		20E9B6E2FD2AB0C37FE18FC9 /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				DCB2BAC3F8401E6CBD572F73 /* RemindersView.swift */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		271E9186F29830F2E717330F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D89CA449983DF1138CD16BA4 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		298D1AC9DBB735FBCF833897 /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
+				1B28AD08491F6D3507075F45 /* Localizable.strings */,
 			);
 			path = Localizations;
+			sourceTree = "<group>";
+		};
+		2BB871F06D0EFAE8119394F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				428AE850C8194A568E090321 /* InjectionSite.swift */,
+				4C71FAD71B176063845F71A1 /* PeptideCatalog.swift */,
+				F7F5B812C1E76E025B83E449 /* PeptideEntry.swift */,
+				192127E28B86BAFBDB5FFD11 /* SideEffectLog.swift */,
+				5052DC0B6BB5A973728CE7AB /* SideEffectsCatalog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		51370E89BA13813FA59ABF11 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A9D91DE88F1EE17327B59BD /* Color+Hex.swift */,
+				2D70D3F993DF849BE0DDC876 /* Notification+Names.swift */,
+				20E2DE2E1F232C81B05B0F84 /* View+DarkCard.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		64B4B24902F6EA94495F4FC6 /* Products */ = {
@@ -33,6 +149,51 @@
 				B91AB9EB633EED6F5DE35F1A /* PeptidesTrack.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6B368E01A94877844354B108 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				BA5D8706A102F1E3F8EC98F5 /* DisclaimerModal.swift */,
+				7D5434804200582C91A25AED /* ReminderWarningModal.swift */,
+				34DC8CB26622E6384D75D24D /* WeeklyReminderPrompt.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		6F97953C282C015366016AEB /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				1789A2672B5D8FA238BAD2C1 /* PeptidesNotificationManager.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		75798AB023E45B7F9628B30A /* SideEffects */ = {
+			isa = PBXGroup;
+			children = (
+				D6E54752E90F257B0002F702 /* LogSideEffectsView.swift */,
+				C885969B413B503971F634D3 /* SideEffectsEditorView.swift */,
+			);
+			path = SideEffects;
+			sourceTree = "<group>";
+		};
+		88B96A2646999950E57640EF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CA7122B5035E8BF325FEAB16 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A3547B73FD1E6E520D862C59 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				94C37846839554C1D6B9B441 /* OnboardingSlide.swift */,
+				8C1597053224FE4DFA81DE16 /* OnboardingView.swift */,
+				C6D80B9ADBF665C438BF113B /* PaywallView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		A80CF56E6749A47C43727230 /* Resources */ = {
@@ -47,6 +208,17 @@
 		A84872408FC8C5E662A2B724 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E12BFF2B19F678E23D256FCC /* AddPeptide */,
+				E8BE2E2BDC0CD72F682E3CAC /* History */,
+				88B96A2646999950E57640EF /* Home */,
+				E00B125AB2DB516933DB2799 /* LogDose */,
+				6B368E01A94877844354B108 /* Modals */,
+				A3547B73FD1E6E520D862C59 /* Onboarding */,
+				20E9B6E2FD2AB0C37FE18FC9 /* Reminders */,
+				271E9186F29830F2E717330F /* Settings */,
+				75798AB023E45B7F9628B30A /* SideEffects */,
+				144763C93D74B74C7E811910 /* Stats */,
+				39735AD2AAA7D82BDB40BE1F /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -55,12 +227,62 @@
 			isa = PBXGroup;
 			children = (
 				F38E4DD068F660C93891F89B /* App */,
+				E59EB78681A767368DFE9BA7 /* Components */,
+				51370E89BA13813FA59ABF11 /* Extensions */,
+				2BB871F06D0EFAE8119394F6 /* Models */,
+				6F97953C282C015366016AEB /* Notifications */,
 				A80CF56E6749A47C43727230 /* Resources */,
+				E17DB61F9F7A01BB9B6AD1CA /* Store */,
 				A84872408FC8C5E662A2B724 /* Views */,
 				02FBDDCA9E5BF2FE022D1483 /* Info.plist */,
 				20E2E69759F229A23A26D356 /* PeptidesTrack.entitlements */,
 			);
 			path = PeptidesTrack;
+			sourceTree = "<group>";
+		};
+		E00B125AB2DB516933DB2799 /* LogDose */ = {
+			isa = PBXGroup;
+			children = (
+				CD00CD9F24048F87D1C90991 /* InjectionSiteMapView.swift */,
+				E113CA41B88CD28022A31627 /* LogDoseView.swift */,
+			);
+			path = LogDose;
+			sourceTree = "<group>";
+		};
+		E12BFF2B19F678E23D256FCC /* AddPeptide */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE062F722AC2DAEA66E356 /* AddPeptideWizardView.swift */,
+			);
+			path = AddPeptide;
+			sourceTree = "<group>";
+		};
+		E17DB61F9F7A01BB9B6AD1CA /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				27EC4CA3B5F30513D1353B37 /* StoreManager.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		E59EB78681A767368DFE9BA7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				299B8DBD53DEF135902B5E04 /* PeptideCardRow.swift */,
+				E2125566F6E7072FD9884E2C /* PeptideDoseHistoryRow.swift */,
+				B19BD67A8BA4DBF779B07F32 /* ProBadgeView.swift */,
+				D02B439F656CCC6E77307F61 /* SideEffectSliderCard.swift */,
+				667D236BE3C26866D0AB96B5 /* StatPill.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E8BE2E2BDC0CD72F682E3CAC /* History */ = {
+			isa = PBXGroup;
+			children = (
+				6171D9870FCCD5C405C86852 /* PeptideHistoryView.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 		F38E4DD068F660C93891F89B /* App */ = {
@@ -121,7 +343,10 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
+				de,
 				en,
+				es,
+				"pt-BR",
 			);
 			mainGroup = F88678A57C580D7402152E75;
 			minimizedProjectReferenceProxies = 1;
@@ -140,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8FCC3FAC49E4C213E2FDE13 /* Assets.xcassets in Resources */,
+				FB61EE77D3D734A58EC45918 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,11 +376,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554EADAEFEAEA637E85BFF59 /* AddPeptideWizardView.swift in Sources */,
+				953703CF54AABC13F8CA4638 /* Color+Hex.swift in Sources */,
+				0628FEE2BAEE1EAE64D82783 /* ContentView.swift in Sources */,
+				A8598D59A6DDAFC6A77F5444 /* DisclaimerModal.swift in Sources */,
+				AB610BAFD7F86DCB2D118CEB /* HomeView.swift in Sources */,
+				50D9E64F14DBF8F8C92507EF /* InjectionSite.swift in Sources */,
+				B9B6371F4385CD16A22E86C1 /* InjectionSiteMapView.swift in Sources */,
+				0D03B6C5FD3651CA27386EE4 /* LogDoseView.swift in Sources */,
+				A1DBB0BCC08A1DEE7958660A /* LogSideEffectsView.swift in Sources */,
+				59313E41A2658B2CABF7F007 /* Notification+Names.swift in Sources */,
+				8F1474624932A5C5EC7877C4 /* OnboardingSlide.swift in Sources */,
+				E3FCD5A51C8A3D12C2EB6C1E /* OnboardingView.swift in Sources */,
+				43A4921FC247EF9CF08C28EF /* PaywallView.swift in Sources */,
+				033163A60D016D8386E2369C /* PeptideCardRow.swift in Sources */,
+				68D2A0A2418C2EAA47F55717 /* PeptideCatalog.swift in Sources */,
+				84D900878CC26A3E6A97B45F /* PeptideDoseHistoryRow.swift in Sources */,
+				6445BC60C0A721E20FEBF116 /* PeptideEntry.swift in Sources */,
+				9AD46D5BE3CF1C930C4BD67E /* PeptideHistoryView.swift in Sources */,
+				63FB73E68BFC79F8659495D6 /* PeptidesNotificationManager.swift in Sources */,
 				14F9077138DD459FCD4106E9 /* PeptidesTrackApp.swift in Sources */,
+				0BF70EE3917AD7D40A235C2E /* ProBadgeView.swift in Sources */,
+				8E0A7B784E749ADF12D1513C /* ReminderWarningModal.swift in Sources */,
+				CC189B923B24E2D2366ED844 /* RemindersView.swift in Sources */,
+				45CEB336371C7E557A2D2983 /* SettingsView.swift in Sources */,
+				61060082E027D3E8D228A0DB /* SideEffectLog.swift in Sources */,
+				9F091F26A4CA5DD563417984 /* SideEffectSliderCard.swift in Sources */,
+				BFC31FA26E5D25E1AD436EF6 /* SideEffectsCatalog.swift in Sources */,
+				2A0A44DD5F3BD9BECFDD6040 /* SideEffectsEditorView.swift in Sources */,
+				B05A7F5F6E7956928D07BED7 /* StatPill.swift in Sources */,
+				3030396B06C969F0F7215F94 /* StatsView.swift in Sources */,
+				AB4518A775FFE495FC246865 /* StoreManager.swift in Sources */,
+				94CE760273EFBFFFA1DEF273 /* View+DarkCard.swift in Sources */,
+				16EA3FA6018CC2E24D25DD5B /* WeeklyReminderPrompt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B28AD08491F6D3507075F45 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A584B2AE4B2958C70F02D52 /* de */,
+				2B312BEC75B1A793084A20E8 /* en */,
+				DB8FDDE7B153BAC1C0A20251 /* es */,
+				CF8823C0E647918D29C76154 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		14BD76F242181F983B61A520 /* Debug */ = {
